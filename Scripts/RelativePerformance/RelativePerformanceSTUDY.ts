@@ -3,10 +3,12 @@
 
 declare lower;
 
-def stockDay = close(period = AggregationPeriod.DAY);
-def qqqDay = close("QQQ", period = AggregationPeriod.DAY);
-def spxDay = close("SPX", period = AggregationPeriod.Day);
+def stockPrice = close;
+def qqqPrice = close("QQQ");
+def spxPrice = close("SPX");
+def diaPrice = close("DIA");
 
-plot stock = Round(((stockDay - First(stockDay)) / First(stockDay)) * 100, 2);
-plot spx = Round(((spxDay - First(spxDay)) / First(spxDay)) * 100, 2);
-plot qqq = Round(((qqqDay - First(qqqDay)) / First(qqqDay)) * 100, 2);
+plot stock = Round(((stockPrice - First(stockPrice)) / First(stockPrice)) * 100, 2);
+plot spx = Round(((spxPrice - First(spxPrice)) / First(spxPrice)) * 100, 2);
+plot qqq = Round(((qqqPrice - First(qqqPrice)) / First(qqqPrice)) * 100, 2);
+plot dia = Round(((diaPrice - First(diaPrice)) / First(diaPrice)) * 100, 2);
