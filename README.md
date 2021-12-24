@@ -20,8 +20,14 @@
 - Can plot 2 moving averages
 - Use 10EMA and 20EMA
 
-#####  Relative Performance
+#####  Relative Performance (defunct)
 - Plots relative performance of a security compared to SPX and QQQ indexes
+
+#####  Stock Performance
+- Enhanced version of relative performance
+- Plots relative performance of a security compared to SPX, QQQ, DIA indexes
+- Shows alpha vs SPX
+- Can switch to total return during timeframe or YTD
 
 #####  RSI 60-50-40
 - Modified RSI to include 60-50-40 lines
@@ -33,6 +39,11 @@
 - The more signals that occur more likely institutional buyers bidding up the price
 - Script also plots from highs/lows of the day and color coordinates green for uptrend, red for downtrend, and white for neutral
 - *Only works for the 1 hour timeframe*
+
+#####  RSI Bars
+- Best used with candle bars
+- Candle colors change via RSI level
+- RSI changes shades of color depending on the level of RSI. Lower are red shades and higher are blue shades
 
 ## Scans
 
